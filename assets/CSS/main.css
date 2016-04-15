@@ -22,16 +22,6 @@ body {
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: 8px;
-    font-family:  monospace;
-}
-
-#about {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    position: relative;
-    background-color: white;
-    top: 220px;
-    padding:8em;
-}
-#about a {
+    font-family: "PT Sans", sans-serif, Arial;
     color: darkslateblue;
 }

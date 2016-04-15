@@ -28,7 +28,7 @@ Banner: Navigation, Info, scroll button
 }
 
 header a {
-    color: white;
+    color: white !important;
     text-decoration: none;
 }
 
@@ -36,7 +36,7 @@ header a:hover {
     color: #e44c65 !important;
 }
 
-#banner ol,ul li {
+.content ol,ul li {
     list-style: none;
     display: inline;
     margin: 0;
@@ -66,4 +66,7 @@ header a:hover {
 
 #banner .content .image::-webkit-scrollbar {
     display: none;
+}
+#banner h1 {
+    color: white !important;
 }

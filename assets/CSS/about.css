@@ -1,0 +1,49 @@
+/*
+All about 'about' page
+*/
+
+#about {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+    display: list-item;
+    background: url(../Images/bg3.jpg) fixed no-repeat;
+    background-size: 100%;
+    top: 220px;
+
+}
+#about a,#projects a {
+    color: darkslateblue !important;
+}
+p { text-indent: 25px; }
+ol li {
+    text-align: left;
+    list-style: square;
+    display: list-item;
+
+}
+table {
+    text-align: center;
+}
+table td {
+    vertical-align: top;
+}
+#about aside,#projects aside{
+    width:60%;
+    position: relative;
+    background-color: white;
+    left: 0;
+    height: 100%;
+    padding:4em;
+}
+/*
+Projects here
+*/
+
+#projects {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+    display: list-item;
+    background: url(../Images/bg3.jpg) fixed no-repeat;
+    background-size: cover;
+    top: 280px;
+}
