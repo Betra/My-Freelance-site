@@ -1,0 +1,69 @@
+/*
+Only head part of the site
+Banner: Navigation, Info, scroll button
+*/
+#banner {
+    background: rgba(28, 29, 38, 0.7);
+    position: relative;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+
+}
+
+#header {
+    position:absolute;
+    right: 0;
+    top:0;
+    width:100%;
+    z-index: 2;
+    height: 3.5em;
+    text-align: right;
+}
+
+#header nav {
+    float: right;
+    padding-right: 10px;
+
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #e44c65 !important;
+}
+
+#banner ol,ul li {
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0;
+    padding-right: 10px !important;
+}
+
+#banner .content {
+    padding: 4.5em;
+    margin-top: 6em;
+    display: inline-block;
+    text-align: right;
+}
+
+#banner .content header {
+    float:left;
+    margin: 4em;
+}
+#banner .content .image {
+    border-radius: 100%;
+    display: inline-block;
+    height: 18em;
+    width: 18em;
+    float:right;
+    overflow: scroll;
+}
+
+#banner .content .image::-webkit-scrollbar {
+    display: none;
+}

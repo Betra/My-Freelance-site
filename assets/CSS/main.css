@@ -1,0 +1,37 @@
+/*
+Something fundamental in here
+*/
+@import "fonts.css";    /* <--Importing fonts */
+
+
+html,body,div,span,article,section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+article,section,div,header,footer,nav,body {
+    display: block;
+}
+body {
+    font-family:"PT Sans", sans-serif, Arial;
+    font-size: 20px;
+    line-height: 1.55em;
+    background: url(../Images/bg4.jpg) fixed;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-family:  monospace;
+}
+
+#about {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+    background-color: white;
+    top: 220px;
+    padding:8em;
+}
+#about a {
+    color: darkslateblue;
+}
