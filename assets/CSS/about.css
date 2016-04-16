@@ -1,49 +1,81 @@
-/*
-All about 'about' page
-*/
-
-#about {
+/* ALL BLOCKS */
+.block {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     position: relative;
-    display: list-item;
-    background: url(../Images/bg3.jpg) fixed no-repeat;
-    background-size: 100%;
-    top: 220px;
-
+    background-size: cover;
+    left: 1em;
+    width: calc(100% - 1em);
 }
-#about a,#projects a {
-    color: darkslateblue !important;
+.block a,#buy a {
+    color: tomato !important;
+    text-decoration: none;
 }
-p { text-indent: 25px; }
-ol li {
-    text-align: left;
-    list-style: square;
-    display: list-item;
-
+.block a:hover ,#buy a:hover {
+    color: lightseagreen!important;
 }
-table {
-    text-align: center;
-}
-table td {
-    vertical-align: top;
-}
-#about aside,#projects aside{
+.block aside{
     width:60%;
     position: relative;
     background-color: white;
-    left: 0;
-    height: 100%;
     padding:4em;
 }
-/*
-Projects here
-*/
-
-#projects {
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    position: relative;
-    display: list-item;
+/***About here***/
+#about {
+    top: 220px;
     background: url(../Images/bg3.jpg) fixed no-repeat;
-    background-size: cover;
-    top: 280px;
+}
+/***Projects here***/
+#projects {
+    background: url(../Images/bg-block2.jpg) fixed no-repeat right top;
+    background-size: 100%;
+    background-position-x: +300px;
+    top: 260px;
+}
+/***Certificates here***/
+#certificate {
+    background: url(../Images/bg-block4.jpg) fixed no-repeat right top;
+    background-size: 100%;
+    background-position-x: +500px;
+    top: 300px;
+}
+
+#error-doge {
+     margin-bottom: -9.45em;
+ }
+.harold {
+    margin-bottom: -5em;
+    float:right;
+    margin-right: -4em;
+}
+/***Buy***/
+#buy {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background: white;
+    top: 340px;
+    padding: 4em 30% 4em 30%;
+}
+textarea {
+    outline: none;
+    resize: none;
+    width: 100%;
+    overflow: auto;
+    border: none;
+    border-top: 1px solid tomato !important;
+}
+
+#Confirm {
+    font-style: normal;
+    color: white;
+    background: tomato;
+    border: 0 solid #ffffff;
+    text-shadow: 0 -1px 1px #222;
+    box-shadow: 2px 2px 5px black;
+    -moz-box-shadow: 2px 2px 5px black;
+    -webkit-box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding: 10px;
+    font-size:25px;
 }

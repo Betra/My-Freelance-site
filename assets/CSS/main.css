@@ -13,7 +13,7 @@ article,section,div,header,footer,nav,body {
     display: block;
 }
 body {
-    font-family:"PT Sans", sans-serif, Arial;
+    font-family:"Lato","PT Sans", sans-serif, Arial;
     font-size: 20px;
     line-height: 1.55em;
     background: url(../Images/bg4.jpg) fixed;
@@ -22,6 +22,19 @@ body {
 h1,h2,h3,h4,h5,h6 {
     margin-top: 0;
     margin-bottom: 8px;
-    font-family: "PT Sans", sans-serif, Arial;
-    color: darkslateblue;
+    font-family: "Lato","PT Sans", sans-serif, Arial;
+    color: tomato;
+}
+p { text-indent: 25px; }
+ol li {
+    text-align: left;
+    list-style: square;
+    display: list-item;
+
+}
+table {
+    text-align: center;
+}
+table td {
+    vertical-align: top;
 }

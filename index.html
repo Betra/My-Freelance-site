@@ -6,7 +6,6 @@
     <script src="assets/JS/jquery-2.2.3.min.js"></script>
     <script src="assets/JS/jquery-ui.js"></script>
     <script src="assets/JS/main.js"></script>
-    <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/CSS/main.css">
     <link rel="stylesheet" href="assets/CSS/banner.css">
@@ -19,6 +18,13 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
+
+    <script>
+        $(document).ready(
+                function() {
+                    $('#papers').accordion();
+                });
+    </script>
     <title>Визитка</title>
     <meta charset="utf-8" />
 </head>
@@ -32,8 +38,8 @@
                 <li><a href="#banner">Главная</a></li>
                 <li><a href="#about" class="slide">Подробнее</a></li>
                 <li><a href="#projects">Проекты</a></li>
-                <li><a href="#">Сертификаты</a></li>
-                <li><a href="#">Заказать</a></li>
+                <li><a href="#certificate">Сертификаты</a></li>
+                <li><a href="#buy">Заказать</a></li>
             </ul>
         </nav>
     </header>
@@ -60,12 +66,12 @@
         </div>
 
         <section id="scroll" class="slide">
-            <img src="assets/Images/down.png" width="64"  />
+            <a href="#about"><img src="assets/Images/down.png" width="64"  /></a>
         </section>
     </section>
 
     <!--About-->
-    <section id="about">
+    <section id="about" class="block">
         <aside>
             <header><h2><a href="#about">Подробнее</a></h2></header>
             <p>
@@ -98,7 +104,7 @@
                     <ol>
                         <li>Сайты-визитки</li>
                         <li>Небольшие автоматизированные магазины</li>
-                        <li>Малые сайты</li>
+                        <li>Блоги</li>
                         <li>Web-приложения/сервисы</li>
                         <li>Малые браузерные игры</li>
                         <li>Проверяю сайты/сервера на частые, но очень злые уязвимости</li>
@@ -123,36 +129,66 @@
         </aside>
     </section>
     <!--Projects-->
-    <section id="projects">
+    <section id="projects" class="block">
         <aside>
             <header><h2><a href="#projects">Проекты</a> </h2></header>
-            This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
+            <p>
+                В первую очередь, советую вам посмотреть мои работы на <a href="https://codepen.io/betra/" target="_blank">Codepen</a> и <a href="https://github.com/Betra" target="_blank">Github</a>.
+                Там может быть много интересного! Здесь же я буду публиковать законченные проекты.</p>
 
-            To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-            This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
+            <ol>
+                <li>Сайт-визитка <a href="http://thedorofeev.ru">TheDorofeev.ru</a></li>
+            </ol>
 
-            To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-            This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-            To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-            This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-            To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-            This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-            To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-            This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-            To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-            This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-            To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
+            <span><img src="assets/Images/empty.png" id='error-doge' /></span>
         </aside>
     </section>
-
-
+    <!--Certificates-->
+    <section id="certificate" class="block">
+        <aside>
+            <header><h2><a href="#certificate">Сертификаты</a></h2></header>
+            <p>Я честно стараюсь повысить свою квалификацию: прочитал уже множество книг, туториалов, прошел много курсов... Вы можете проверить мой аккаунт
+             <a href="https://www.codecademy.com/Beepsky" >Codecademy</a>. Там вы найдете подтверждение о прохождении нескольких курсов. К моему счастью, существуют и такие, где выдают сертификаты... Вот, смотрите (нажмите на название):</p>
+            <div id="papers">
+                <h3>Политехнический университет</h3>
+                    <div>
+                        <p>
+                            ssss
+                        </p>
+                    </div>
+                <h3>IT.Mail.ru</h3>
+                    <div>
+                        <p>
+                         <img src="assets/Images/pain.png" width="720" class="harold"/>
+                        </p>
+                    </div>
+                <h3>Stepic.org</h3>
+                    <div>
+                        <p>
+                            <img src="assets/Images/pain.png" width="720" class="harold"/>
+                        </p>
+                    </div>
+            </div>
+        </aside>
+    </section>
+    <!--Buy-->
+    <section id="buy">
+        <section>
+            <header><center><h2><a href="#buy">Заказать проект</a></h2></center></header>
+            <form action="send.php" method="post">
+            <textarea placeholder="Электропочта" name="email" maxlength="72"></textarea>
+            <textarea placeholder="Имя" name="name" maxlength="72"></textarea>
+            <textarea placeholder="Сообщение" id="buyText" name="text" maxlength="3000" style="height: 250px;"></textarea>
+                <input type="submit" name="submit" id="Confirm" />
+            </form>
+        </section>
+    </section>
+    <!-- Footer -->
+    <footer>
+        &nbsp;
+    </footer>
 </section>
-<!-- Footer -->
+
 
 </body>
 </html>

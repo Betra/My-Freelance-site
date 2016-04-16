@@ -13,6 +13,14 @@
     font-family: "Reef";
     src: url(../fonts/Reef.otf);
 }
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/Lato-Light.eot);
+    src:
+            url(../fonts/Lato-Light.ttf) format('truetype'),
+            url(../fonts/Lato-Light.woff) format('woff'),
+            url(../fonts/Lato-Light.woff2) format('woff2');
+}
 /* Button fonts */
 @font-face {
     font-family: 'icomoon';
@@ -26,7 +34,6 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
