@@ -26,8 +26,14 @@ Banner: Navigation, Info, scroll button
     padding-right: 10px;
 
 }
-
-header a {
+#scroll a{
+    color: white;
+    text-decoration: none;
+}
+#scroll a:hover {
+    color: #e44c65 !important;
+}
+header a{
     color: white !important;
     text-decoration: none;
 }
@@ -36,7 +42,7 @@ header a:hover {
     color: #e44c65 !important;
 }
 
-.content ol,ul li {
+.content ul,ol li, footer ol li {
     list-style: none;
     display: inline;
     margin: 0;

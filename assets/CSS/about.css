@@ -19,6 +19,12 @@
     background-color: white;
     padding:4em;
 }
+.block ol li {
+    text-align: left;
+    list-style: square;
+    display: list-item;
+
+}
 /***About here***/
 #about {
     top: 220px;
@@ -43,9 +49,8 @@
      margin-bottom: -9.45em;
  }
 .harold {
-    margin-bottom: -5em;
-    float:right;
-    margin-right: -4em;
+    margin-bottom: -4.5em;
+
 }
 /***Buy***/
 #buy {
@@ -67,7 +72,7 @@ textarea {
 #Confirm {
     font-style: normal;
     color: white;
-    background: tomato;
+    background: lightseagreen;
     border: 0 solid #ffffff;
     text-shadow: 0 -1px 1px #222;
     box-shadow: 2px 2px 5px black;
@@ -79,3 +84,4 @@ textarea {
     padding: 10px;
     font-size:25px;
 }
+

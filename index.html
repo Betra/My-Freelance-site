@@ -4,8 +4,9 @@
 <head>
     <!-- JavaScript-->
     <script src="assets/JS/jquery-2.2.3.min.js"></script>
-    <script src="assets/JS/jquery-ui.js"></script>
-    <script src="assets/JS/main.js"></script>
+    <script src="assets/JS/jquery-ui.js" async></script>
+    <script src="assets/JS/main.js" async></script>
+    <script src="assets/JS/message.js" async></script>
     <!-- CSS -->
     <link rel="stylesheet" href="assets/CSS/main.css">
     <link rel="stylesheet" href="assets/CSS/banner.css">
@@ -18,14 +19,13 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-
     <script>
-        $(document).ready(
-                function() {
-                    $('#papers').accordion();
-                });
+        $(document).ready(function() {
+            $('a').smoothScroll();
+        });
     </script>
-    <title>Визитка</title>
+
+    <title>Заказ Сайтов. Иван Дорофеев</title>
     <meta charset="utf-8" />
 </head>
 <body>
@@ -34,13 +34,13 @@
     <header id="header">
         <!--Navigation-->
         <nav>
-            <ul>
+            <ol>
                 <li><a href="#banner">Главная</a></li>
-                <li><a href="#about" class="slide">Подробнее</a></li>
+                <li><a href="#about">Подробнее</a></li>
                 <li><a href="#projects">Проекты</a></li>
                 <li><a href="#certificate">Сертификаты</a></li>
                 <li><a href="#buy">Заказать</a></li>
-            </ul>
+            </ol>
         </nav>
     </header>
 
@@ -52,21 +52,21 @@
                 <p>Программист, веб-мастер.
                     <br/>
                     selfbetray@gmail.com</p>
-                <ul>
+                <ol>
                     <!--Social Links-->
                     <li><a href="https://new.vk.com/selfbetray" target="_blank"><span class="icon-vk"></span></a></li>
                     <li><a href="https://github.com/Betra" target="_blank"><span class="icon-github"></span></a></li>
                     <li><a href="https://telegram.me/betra" target="_blank"><span class="icon-telegram"></span></a></li>
                     <li><a href="https://codepen.io/betra/" target="_blank"><span class="icon-codepen"></span></a></li>
-                    <li><a href="mailto:selfbetray@gmail.com" target="_blank"><span class="icon-mail2"></span></a></li>
-                    <li><a href="mailto:selfbetray@gmail.com" target="_blank"><span class="icon-share2"></span></a></li>
-                </ul>
+                    <li><a href="mailto:selfbetray@gmail.com" target="_blank"><span class="icon-mail"></span></a></li>
+                    <li><a href="http://vk.com/share.php?url=http://thedorofeev.ru" target="_blank"><span class="icon-share"></span></a></li>
+                </ol>
             </header>
             <span class="image"><img src="assets/Images/avatar2.jpg" id='avatar' /></span>
         </div>
 
-        <section id="scroll" class="slide">
-            <a href="#about"><img src="assets/Images/down.png" width="64"  /></a>
+        <section id="scroll">
+            <a href="#about"><span class="icon-down" id="scroller"></span></a>
         </section>
     </section>
 
@@ -75,25 +75,8 @@
         <aside>
             <header><h2><a href="#about">Подробнее</a></h2></header>
             <p>
-
-                This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-                To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-                This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-                To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-                This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-                To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-                This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-                To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-                This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-                To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).
-                This demo shows scroll and rendering performance gains when using md-virtual-repeat; achieved with the dynamic reuse of rows visible in the viewport area. Developers are required to explicitly use md-virtual-repeat-container as a wrapping parent container.
-
-                To enable load-on-demand behavior, developers must pass in a custom instance of mdVirtualRepeatModel (see the example's source for more info).</p>
+                Открываете компанию? Хотите стать известнее? Вам точно нужен сайт!
+            </p>
             <table>
             <tr>
                 <td><h1>Что я делаю?</h1></td>
@@ -119,7 +102,7 @@
                         <li>PHP (PHP7 по умолчанию)</li>
                         <li>JavaScript (Strict Mod по умолчанию)</li>
                         <li>jQuery</li>
-                        <li>MySQLi</li>
+                        <li>MySQL</li>
                         <li>ActionScript</li>
                         <li>Python</li>
                     </ol>
@@ -140,52 +123,55 @@
                 <li>Сайт-визитка <a href="http://thedorofeev.ru">TheDorofeev.ru</a></li>
             </ol>
 
-            <span><img src="assets/Images/empty.png" id='error-doge' /></span>
+            <span><img src="assets/Images/empty.png" id='error-doge' width="540" /></span>
         </aside>
     </section>
     <!--Certificates-->
     <section id="certificate" class="block">
         <aside>
             <header><h2><a href="#certificate">Сертификаты</a></h2></header>
-            <p>Я честно стараюсь повысить свою квалификацию: прочитал уже множество книг, туториалов, прошел много курсов... Вы можете проверить мой аккаунт
-             <a href="https://www.codecademy.com/Beepsky" >Codecademy</a>. Там вы найдете подтверждение о прохождении нескольких курсов. К моему счастью, существуют и такие, где выдают сертификаты... Вот, смотрите (нажмите на название):</p>
-            <div id="papers">
+            <p>Я честно стараюсь повысить свою квалификацию: прочитал много книг, туториалов, прошел немало курсов... Вы можете проверить мой аккаунт <a href="https://stepic.org/users/15249813">Stepic</a> или
+             <a href="https://www.codecademy.com/Beepsky" >Codecademy</a>. Там вы найдете подтверждение о прохождении пары. К моему счастью, существуют и такие, где выдают сертификаты... Вот, смотрите:</p>
+
                 <h3>Политехнический университет</h3>
-                    <div>
-                        <p>
-                            ssss
-                        </p>
-                    </div>
-                <h3>IT.Mail.ru</h3>
-                    <div>
-                        <p>
-                         <img src="assets/Images/pain.png" width="720" class="harold"/>
-                        </p>
-                    </div>
-                <h3>Stepic.org</h3>
-                    <div>
-                        <p>
-                            <img src="assets/Images/pain.png" width="720" class="harold"/>
-                        </p>
-                    </div>
-            </div>
+                         <img src="assets/Images/pain.png" width="540" class="harold"/>
         </aside>
     </section>
     <!--Buy-->
     <section id="buy">
         <section>
             <header><center><h2><a href="#buy">Заказать проект</a></h2></center></header>
-            <form action="send.php" method="post">
+            <form action=""  id="ajax">
             <textarea placeholder="Электропочта" name="email" maxlength="72"></textarea>
             <textarea placeholder="Имя" name="name" maxlength="72"></textarea>
             <textarea placeholder="Сообщение" id="buyText" name="text" maxlength="3000" style="height: 250px;"></textarea>
-                <input type="submit" name="submit" id="Confirm" />
+             <center><input type="submit" name="submit" id="Confirm" /></center>
             </form>
         </section>
     </section>
     <!-- Footer -->
     <footer>
-        &nbsp;
+        <table>
+            <tr>
+                <td>
+        &copy;All rights reserved. 2016<br/>
+        По всем вопросам обращаться на email: selfbetray@gmail.com
+                </td>
+            <td>Я в соцсетях:<br/>
+                <ol>
+                    <li><a href="https://new.vk.com/selfbetray" target="_blank"><span class="icon-footer-vk"></span></a></li>
+                    <li><a href="https://codepen.io/betra/" target="_blank"><span class="icon-footer-codepen"></span></a></li>
+                    <li><a href="https://github.com/Betra" target="_blank"><span class="icon-footer-git"></span></a></li>
+                    <li><a href="https://www.instagram.com/betrayle/" target="_blank"><span class="icon-footer-inst"></span></a></li>
+                    <li><a href="mailto:selfbetray@gmail.com" target="_blank"><span class="icon-footer-mail"></span></a></li>
+                    <li><a href="http://vk.com/share.php?url=http://thedorofeev.ru" target="_blank"><span class="icon-footer-share"></span></a></li>
+                </ol>
+            </td>
+                <td>
+                    <a href="#banner">Вверх!</a>
+                </td>
+            </tr>
+        </table>
     </footer>
 </section>
 

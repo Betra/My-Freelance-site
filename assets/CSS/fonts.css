@@ -24,16 +24,17 @@
 /* Button fonts */
 @font-face {
     font-family: 'icomoon';
-    src:    url(../fonts/icomoon.eot?pfac3v);
-    src:    url(../fonts/icomoon.eot?pfac3v#iefix) format('embedded-opentype'),
-    url(../fonts/icomoon.ttf?pfac3v) format('truetype'),
-    url(../fonts/icomoon.woff?pfac3v) format('woff'),
-    url(../fonts/icomoon.svg?pfac3v#icomoon) format('svg');
+    src:    url(../fonts/icomoon.eot?pml3fu);
+    src:    url(../fonts/icomoon.eot?pml3fu#iefix) format('embedded-opentype'),
+    url(../fonts/icomoon.ttf?pml3fu) format('truetype'),
+    url(../fonts/icomoon.woff?pml3fu) format('woff'),
+    url(../fonts/icomoon.svg?pml3fu#icomoon) format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'icomoon' !important;
     speak: none;
     font-style: normal;
@@ -48,35 +49,44 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-mug:before {
-    content: "\e900";
-}
-.icon-attachment:before {
+.icon-footer-mail:before {
     content: "\e901";
 }
-.icon-notification:before {
+.icon-footer-inst:before {
     content: "\e902";
 }
-.icon-cancel-circle:before {
+.icon-footer-fb:before {
     content: "\e903";
 }
-.icon-checkmark:before {
+.icon-footer-share:before {
     content: "\e904";
 }
-.icon-embed2:before {
+.icon-footer-git:before {
     content: "\e905";
 }
-.icon-share2:before {
+.icon-footer-vk:before {
+    content: "\e907";
+}
+.icon-footer-twitter:before {
+    content: "\e909";
+}
+.icon-footer-codepen:before {
+    content: "\e90b";
+}
+.icon-up:before {
+    content: "\e90d";
+}
+.icon-down:before {
+    content: "\e90e";
+}
+.icon-share:before {
     content: "\e906";
 }
-.icon-mail2:before {
-    content: "\e907";
+.icon-mail:before {
+    content: "\e900";
 }
 .icon-telegram:before {
     content: "\e908";
-}
-.icon-twitter:before {
-    content: "\e909";
 }
 .icon-vk:before {
     content: "\e90a";
@@ -84,15 +94,10 @@
 .icon-github:before {
     content: "\1f361";
 }
-.icon-linkedin2:before {
+.icon-linkedin:before {
     content: "\e90c";
-}
-.icon-html-five:before {
-    content: "\e90d";
-}
-.icon-css3:before {
-    content: "\e90e";
 }
 .icon-codepen:before {
     content: "\e90f";
 }
+

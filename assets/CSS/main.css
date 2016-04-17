@@ -26,15 +26,31 @@ h1,h2,h3,h4,h5,h6 {
     color: tomato;
 }
 p { text-indent: 25px; }
-ol li {
-    text-align: left;
-    list-style: square;
-    display: list-item;
 
-}
 table {
     text-align: center;
 }
 table td {
     vertical-align: top;
+}
+footer {
+    position: relative;
+    background: rgba(28, 29, 38, 0.8);
+    top:340px;
+    padding: 4em;
+    padding-bottom: 2em !important;
+    color: white;
+    font-size: 16px;
+}
+footer td {
+    border-right:1px solid white;
+    padding: 1em;
+}
+footer a {
+    color: white !important;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e44c65 !important;
 }
